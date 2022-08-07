@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.ferbylv.monkeyblogjava.mapper.ContractMapper">
+  <resultMap id="BaseResultMap" type="top.ferbylv.monkeyblogjava.bean.Contract">
+    <!--@mbg.generated-->
+    <!--@Table test.contract-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="contract_code" jdbcType="VARCHAR" property="contractCode" />
+    <result column="order_serial" jdbcType="VARCHAR" property="orderSerial" />
+    <result column="contract_name" jdbcType="VARCHAR" property="contractName" />
+    <result column="signed_amount" jdbcType="DECIMAL" property="signedAmount" />
+    <result column="signed_time" jdbcType="TIMESTAMP" property="signedTime" />
+    <result column="agent" jdbcType="VARCHAR" property="agent" />
+    <result column="attachment" jdbcType="VARCHAR" property="attachment" />
+    <result column="contract_type" jdbcType="INTEGER" property="contractType" />
+    <result column="valid" jdbcType="INTEGER" property="valid" />
+    <result column="validity" jdbcType="VARCHAR" property="validity" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, create_time, update_time, contract_code, order_serial, contract_name, signed_amount, 
+    signed_time, agent, attachment, contract_type, `valid`, validity
+  </sql>
+</mapper>
